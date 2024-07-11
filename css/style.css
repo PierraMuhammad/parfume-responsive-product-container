@@ -1,0 +1,145 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+p {
+    font-size: 14px; margin: 0;
+}
+
+.container.product-item {
+    display: flex;
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+}
+
+.product-left, .product-right { 
+    width: 50%;
+}
+
+.product-content {
+    height: 100%;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+    
+.product-right .product-content button {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+p#product-category, p#product-description, p#real-price {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+p#product-category {
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    opacity: 0.6;
+}
+
+p#product-name, p#final-price {
+    font-family: 'Fraunces';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p#product-name {
+    font-size: 28px;
+    padding-right: 28px;
+    margin-top: 15px;
+}
+
+p#product-description {
+    font-size: 13px;
+    padding-right: 6px;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.product-price {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+p#final-price {
+    color: hsl(158, 36%, 37%);
+}
+
+@media screen and (max-width: 426px) {
+    p {
+        font-size: 12px; margin: 0;
+    }
+
+    .container.product-item{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .product-left, .product-right { 
+        width: 100%;
+    }
+
+    .product-left img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .product-content{
+        padding: 0 20px;
+    }
+
+    p#product-category{
+        margin-top: 18px;
+    }
+
+    p#product-name{
+        margin-top: 10px;
+        padding-right: 16px;
+    }
+
+    p#product-description{
+        margin-top: 10px;
+        font-size: 12.2px;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+
+    .product-price{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    button{
+        margin-bottom: 22px;
+    }
+}
